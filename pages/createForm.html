@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./createForm.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Your income and expense details</h1>
+      <form id="entry-form">
+        <div>
+          <input
+            type="text"
+            id="category"
+            placeholder="category"
+            required
+          />
+        </div>
+        <br/>
+        <div>
+          <input type="number" id="amount" placeholder="Amount" required />
+        </div>
+        <br/>
+        
+        <div class="select">
+          <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+        <br/>
+
+        <div class="buttons">
+          <button class="submitButton" type="submit">Add</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    
+    <script src="./createForm.js"></script>
+  </body>
+</html>
